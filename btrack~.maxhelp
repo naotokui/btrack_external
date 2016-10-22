@@ -2,42 +2,51 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
-			"minor" : 1,
+			"major" : 7,
+			"minor" : 0,
 			"revision" : 6,
-			"architecture" : "x86"
+			"architecture" : "x64",
+			"modernui" : 1
 		}
 ,
-		"rect" : [ 129.0, 45.0, 649.0, 660.0 ],
+		"rect" : [ 129.0, 79.0, 649.0, 660.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 11.595187,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-28",
 					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 374.0, 242.0, 237.0, 84.0 ],
+					"style" : "",
 					"text" : "the 'fixtempo' message tells the beat tracker that the tempo will be roughly the argument given - 120bpm in the example. Once set, the beat tracker will not search for tempi drastically different from the argument. The 'unfixtempo' message turns this off.",
 					"varname" : "autohelp_top_description[10]"
 				}
@@ -47,12 +56,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-27",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 344.0, 377.0, 39.0, 19.0 ],
+					"style" : "",
 					"text" : "bpm",
 					"varname" : "autohelp_top_description[9]"
 				}
@@ -67,7 +76,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 303.0, 272.0, 67.0, 17.0 ],
+					"patching_rect" : [ 303.0, 272.0, 67.0, 21.0 ],
+					"style" : "",
 					"text" : "unfixtempo"
 				}
 
@@ -81,7 +91,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 284.0, 242.0, 77.0, 17.0 ],
+					"patching_rect" : [ 284.0, 242.0, 77.0, 21.0 ],
+					"style" : "",
 					"text" : "fixtempo 120"
 				}
 
@@ -91,12 +102,12 @@
 					"fontface" : 2,
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
-					"frgb" : 0.0,
 					"id" : "obj-21",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 280.0, 47.0, 285.0, 19.0 ],
+					"style" : "",
 					"text" : "by Adam Stark, Matthew Davies and Mark Plumbley",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "autohelp_top_digest[1]"
@@ -107,13 +118,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-24",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.0, 482.0, 456.0, 32.0 ],
+					"style" : "",
 					"text" : "Adam. M. Stark, (2011). Musicians and Machines: Bridging the Semantic Gap In Live Performance. PhD Thesis, Queen Mary, University of London. Chapter 3.",
 					"varname" : "autohelp_top_description[8]"
 				}
@@ -124,12 +135,12 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.0, 452.0, 88.0, 19.0 ],
+					"style" : "",
 					"text" : "References:",
 					"varname" : "autohelp_top_description[7]"
 				}
@@ -139,13 +150,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-22",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.0, 527.0, 451.0, 45.0 ],
+					"style" : "",
 					"text" : "Adam M. Stark, Matthew E. P. Davies and Mark D. Plumbley, (2009). Real-time beat-synchronous analysis of musical audio. In Proceedings of International Conference on Digital Audio Effects, pages 299–304.",
 					"varname" : "autohelp_top_description[6]"
 				}
@@ -155,12 +166,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-20",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 239.0, 422.0, 167.0, 19.0 ],
+					"style" : "",
 					"text" : "'bang' on every beat",
 					"varname" : "autohelp_top_description[5]"
 				}
@@ -170,12 +181,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-19",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 299.0, 347.0, 52.0, 19.0 ],
+					"style" : "",
 					"text" : "tempo",
 					"varname" : "autohelp_top_description[4]"
 				}
@@ -189,9 +200,10 @@
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.0, 377.0, 56.0, 19.0 ]
+					"patching_rect" : [ 284.0, 377.0, 56.0, 21.0 ],
+					"style" : ""
 				}
 
 			}
@@ -199,13 +211,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-17",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 314.0, 152.0, 239.0, 58.0 ],
+					"style" : "",
 					"text" : "when beat tracker is off, tap this 4 times to 'count in' the beat tracker at a particular tempo. If the beat tracker is on - tap it twice to 'nudge' it to the right tempo and phase.",
 					"varname" : "autohelp_top_description[3]"
 				}
@@ -217,7 +229,8 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 89.0, 341.0, 45.0, 45.0 ]
+					"patching_rect" : [ 89.0, 341.0, 45.0, 45.0 ],
+					"style" : ""
 				}
 
 			}
@@ -230,7 +243,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.0, 227.0, 32.5, 17.0 ],
+					"patching_rect" : [ 149.0, 227.0, 32.5, 21.0 ],
+					"style" : "",
 					"text" : "0"
 				}
 
@@ -244,7 +258,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.0, 227.0, 32.5, 17.0 ],
+					"patching_rect" : [ 104.0, 227.0, 32.5, 21.0 ],
+					"style" : "",
 					"text" : "1"
 				}
 
@@ -258,7 +273,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 59.0, 227.0, 36.0, 17.0 ],
+					"patching_rect" : [ 59.0, 227.0, 36.0, 21.0 ],
+					"style" : "",
 					"text" : "open"
 				}
 
@@ -272,8 +288,20 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 104.0, 257.0, 48.0, 19.0 ],
-					"save" : [ "#N", "sfplay~", "", 1, 120960, 0, "", ";" ],
+					"patching_rect" : [ 104.0, 257.0, 48.0, 21.0 ],
+					"saved_object_attributes" : 					{
+						"basictuning" : 440,
+						"followglobaltempo" : 0,
+						"formantcorrection" : 0,
+						"mode" : "basic",
+						"originallength" : [ 0.0, "ticks" ],
+						"originaltempo" : 120.0,
+						"pitchcorrection" : 0,
+						"quality" : "basic",
+						"timestretch" : [ 0 ]
+					}
+,
+					"style" : "",
 					"text" : "sfplay~"
 				}
 
@@ -287,7 +315,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 254.0, 152.0, 48.0, 17.0 ],
+					"patching_rect" : [ 254.0, 152.0, 48.0, 21.0 ],
+					"style" : "",
 					"text" : "countin"
 				}
 
@@ -299,7 +328,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 179.0, 407.0, 53.0, 53.0 ]
+					"patching_rect" : [ 179.0, 407.0, 53.0, 53.0 ],
+					"style" : ""
 				}
 
 			}
@@ -307,12 +337,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-5",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 59.0, 152.0, 165.0, 19.0 ],
+					"style" : "",
 					"text" : ": switches the beat tracker off",
 					"varname" : "autohelp_top_description[2]"
 				}
@@ -327,7 +357,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 182.0, 32.5, 17.0 ],
+					"patching_rect" : [ 29.0, 182.0, 32.5, 21.0 ],
+					"style" : "",
 					"text" : "on"
 				}
 
@@ -336,12 +367,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-3",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 59.0, 182.0, 167.0, 19.0 ],
+					"style" : "",
 					"text" : ": switches the beat tracker on",
 					"varname" : "autohelp_top_description[1]"
 				}
@@ -356,13 +387,15 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 152.0, 32.5, 17.0 ],
+					"patching_rect" : [ 29.0, 152.0, 32.5, 21.0 ],
+					"style" : "",
 					"text" : "off"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
 					"id" : "obj-1",
@@ -370,8 +403,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "float" ],
-					"patching_rect" : [ 179.0, 347.0, 68.0, 19.0 ],
-					"text" : "qm.btrack~"
+					"patching_rect" : [ 179.0, 347.0, 49.0, 21.0 ],
+					"style" : "",
+					"text" : "btrack~"
 				}
 
 			}
@@ -385,7 +419,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, -103.0, 171.0, 18.0 ],
+					"patching_rect" : [ 29.0, -103.0, 171.0, 22.0 ],
+					"style" : "",
 					"text" : "read QMlivemusiclab.jpg"
 				}
 
@@ -400,7 +435,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 29.0, -133.0, 69.0, 20.0 ],
+					"patching_rect" : [ 29.0, -133.0, 69.0, 22.0 ],
+					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -410,12 +446,12 @@
 					"fontface" : 3,
 					"fontname" : "Arial",
 					"fontsize" : 20.871338,
-					"frgb" : 0.0,
 					"id" : "obj-7",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.0, 17.0, 325.0, 30.0 ],
+					"style" : "",
 					"text" : "btrack~",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "autohelp_top_title"
@@ -426,12 +462,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.754705,
-					"frgb" : 0.0,
 					"id" : "obj-8",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.0, 47.0, 325.0, 21.0 ],
+					"style" : "",
 					"text" : "A Real-Time Beat Tracker",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "autohelp_top_digest"
@@ -442,13 +478,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
-					"frgb" : 0.0,
 					"id" : "obj-9",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.0, 92.0, 447.0, 45.0 ],
+					"style" : "",
 					"text" : "btrack~ is a real-time beat tracker for Max/MSP. It takes as input an audio signal and outputs bang events from the left outlet on every beat. The tempo is output from the right inlet.",
 					"varname" : "autohelp_top_description"
 				}
@@ -456,7 +492,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.258824, 0.258824, 0.258824, 1.0 ],
+					"angle" : 0.0,
 					"grad1" : [ 0.258824, 0.258824, 0.258824, 1.0 ],
 					"grad2" : [ 0.360784, 0.360784, 0.360784, 1.0 ],
 					"id" : "obj-16",
@@ -465,7 +501,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.0, 17.0, 598.0, 56.0 ],
-					"rounded" : 38
+					"proportion" : 0.39,
+					"rounded" : 38,
+					"style" : ""
 				}
 
 			}
@@ -475,7 +513,7 @@
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 237.5, 369.0, 293.5, 369.0 ],
+					"midpoints" : [ 218.5, 369.0, 293.5, 369.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -607,10 +645,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "qm.btrack~.mxo",
+				"name" : "btrack~.mxo",
 				"type" : "iLaX"
 			}
- ]
+ ],
+		"embedsnapshot" : 0
 	}
 
 }
